@@ -14,6 +14,8 @@ namespace LojaRazor.Models
         [Required, EmailAddress]
         public String Email { get; set; }
 
+        public Sexo Sexo { get; set; }
+
         [Required, MinLength(3)]
         public String Senha { get; set; }
 
@@ -28,8 +30,12 @@ namespace LojaRazor.Models
         [Required, RegularExpression("\\d{5}-\\d{3}")]
         public String CEP { get; set; }
 
+        public Estado Estado { get; set; }
+
         public string Observacoes { get; set; }
 
         public bool RecebePromocoes { get; set; }
+
+        
     }
 }
